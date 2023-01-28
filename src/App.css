@@ -1,38 +1,104 @@
+@import url(https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css);
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar{
+    padding: 12px;
+    /* margin: 15px; */
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-weight: bolder;   
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.topbar {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between ;
+  font-size: larger;
+  
+  }
+  .items{
+    color: orangered;
+  }
+  .welcomepage img{
+    height: 100vh;
+    width: 100%;
+
+  }
+
+  
+  .btn {
+    background-color:white ;
+    color: #000;
+    
+  }
+
+.logo{
+  color: orangered;
+  font-size: 60px;
+  font-weight: 200px;
+  padding-right: 60pc;
+}
+.meals{
+  color: orangered
+}
+
+.card > img {
+  height: 20vh;
+  border-radius: 5px;
+}
+.card {
+  border: none;
+
+  min-width: 200px;
+  max-width: 200px;
+  margin: 0.5em;
+
+  box-shadow: 0.04em 0.04em 0.2em black;
+}
+.recipes {
+  display: flex;
+  flex-wrap: wrap;
+
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
+.description {
+  padding: 0.5em;
+  text-align: center;
 
-.App-link {
-  color: #61dafb;
+  font-weight: bolder;
 }
+.search {
+  min-width: 200px;
+  max-width: 200px;
+  padding: 5px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  max-height: 700px;
+  overflow-y: scroll;
+  background-color: rgb(24, 24, 24);
+}
+.search > li {
+  list-style-type: none;
+  padding: 0.2em 1em;
+  font-weight: bolder;
+  background-color:wheat;
+  margin-top: 5px;
+}
+.main {
+  display: flex;
+  align-items: flex-start;
+}
+.search::-webkit-scrollbar {
+  background-color: transparent;
+}
+.search::-webkit-scrollbar-thumb {
+  background-color: orangered;
+  color: aliceblue;
+  border-radius: 10px;
+}
+.bt{
+  color: transparent;
+}
+.form-space{
+  display: flex;
 }
