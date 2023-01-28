@@ -4,10 +4,11 @@ import { useNavigate } from "react-router-dom";
 function Signup(){
         return(
             <div className="form-space">
-                 <div className="form img">
-                    <img src="https://cdn.pixabay.com/photo/2017/07/28/14/29/macarons-2548827_960_720.jpg" alt="cookies"/>
-                </div>
-                <form>
+                        <div className="form-img">
+                            <img src="https://cdn.pixabay.com/photo/2016/07/12/19/05/pancakes-1512834__340.jpg" alt="cookies"/>
+                        </div>
+                <form className="details">
+                
                     <div className="mb-3">
                         <label for="exampleInputEmail1" className="form-label"> Enter Email address</label>
                         <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
@@ -39,7 +40,7 @@ function Navbar(){
     
     return (
         <>
-            <nav className="navbar navbar-expand-lg bg-body-tertiary  navbar bg-dark mx-3" data-bs-theme="dark">
+            <nav className="navbar navbar-expand-lg bg-body-tertiary  navbar bg-dark " data-bs-theme="dark">
                 <div className=" items container-fluid">
                     <a className=" logo navbar-brand" href="/">Tasty plans</a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">

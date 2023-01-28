@@ -99,6 +99,17 @@
 .bt{
   color: transparent;
 }
+
 .form-space{
   display: flex;
+  margin: 0% auto;
+  width: 75%;
+  border: 2px solid ;
+}
+.form-img img{
+  height: 60vh;
+}
+.details{
+  font-weight: bolder;
+  font-size: x-large;
 }
