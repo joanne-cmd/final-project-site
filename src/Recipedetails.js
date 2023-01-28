@@ -1,4 +1,6 @@
 import React,{useEffect, useState} from "react";
+import { IoArrowBack } from "react-icons/io5";
+
 function Recipedetials({id, setView}){
     const[meal, setMeal]=useState(null)
         useEffect(()=>{
@@ -10,10 +12,10 @@ function Recipedetials({id, setView}){
     return(
 
         <div className="recipesdetails">
-        <button onClick={()=>{
+        <button  onClick={()=>{
             setView("recipes")
 
-        }}>Go Back</button>
+        }}><IoArrowBack /></button>
        {
         meal
         ? <>
@@ -41,9 +43,11 @@ function Recipedetials({id, setView}){
                         })
                         
                     }
-                </div>
-                <p>{meal.strInstructions}</p>
+                </div>  
              </div>
+             <div className="instructions">{meal.strInstructions.split(".").map(sentence => {
+                return <div className="sentences">{sentence}</div>
+             })}</div>
         </>
         : null
        }
