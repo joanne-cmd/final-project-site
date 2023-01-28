@@ -2,12 +2,16 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 function Signup(){
+    const navigate= useNavigate()
         return(
             <div className="form-space">
                         <div className="form-img">
                             <img src="https://cdn.pixabay.com/photo/2016/07/12/19/05/pancakes-1512834__340.jpg" alt="cookies"/>
                         </div>
-                <form className="details">
+                <form className="details" onSubmit={(e)=>{
+                    e.preventDefault()
+                    navigate("/recipes")
+                }}>
                 
                     <div className="mb-3">
                         <label for="exampleInputEmail1" className="form-label"> Enter Email address</label>

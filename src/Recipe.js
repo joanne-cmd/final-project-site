@@ -1,9 +1,16 @@
-import React from "react";
-function Recipe({recipe}){
+import React, { useEffect, useState } from "react";
+function Recipe({recipe, setId, setView}){
+    
+
+    function handleclickcard(){
+        // alert(recipe.idMeal)
+        setId(recipe.idMeal)
+        setView("details")
+    }
     return (
-        <div className="card">
-              <img src={recipe.thumbnail_url} alt={recipe.seo_title}/>
-              <div className="description">{recipe.name}</div>
+        <div onClick={handleclickcard} className="card">
+              <img src={recipe.strMealThumb} alt={recipe.strMeal}/>
+              <div className="description">{recipe.strMeal}</div>
         </div>
               
     )

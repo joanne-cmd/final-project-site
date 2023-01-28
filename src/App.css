@@ -102,9 +102,10 @@
 
 .form-space{
   display: flex;
-  margin: 0% auto;
+  margin: 12% auto;
   width: 75%;
   border: 2px solid ;
+  box-shadow: inset;
 }
 .form-img img{
   height: 60vh;

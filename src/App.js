@@ -1,8 +1,10 @@
 //import logo from './logo.svg';
+import React,{useEffect, useState} from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import {Navbar, Signup} from './Navbar';
 import Recipes from './Recipes';
+import Recipedetials from './Recipedetails';
 
 function Home() {
   return (
@@ -18,13 +20,14 @@ function Home() {
 }
 
 function App() {
- 
+ const[view, setView]=useState("recipes")
+ const[id ,setId]=useState(0)
   return (
     <>
       <Navbar/>
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/recipes' element={<Recipes/>} />
+        <Route path='/recipes' element={view==="recipes"? <Recipes setView={setView} setId={setId}/>:<Recipedetials id={id} setView={setView}/>} />
         <Route path='/signup' element={<Signup />} />
       </Routes>
     </>
