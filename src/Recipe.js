@@ -8,10 +8,7 @@ function Recipe({recipe, setId, setView}){
         setView("details")
     }
     return (
-        <div onClick={handleclickcard} className="card">
-              <img src={recipe.strMealThumb} alt={recipe.strMeal}/>
-              <div className="description">{recipe.strMeal}</div>
-        </div>
+      
               
     )
 }
