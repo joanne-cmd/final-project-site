@@ -37,6 +37,8 @@
   width: 40%;
   padding: 0.8em;
   font-weight: bolder;
+  font-size: x-large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: azure;
 }
   
@@ -176,9 +178,15 @@ li:hover {
   margin: 2em auto;
   padding: 2em;
   background: url("https://cdn.pixabay.com/photo/2016/05/26/14/11/chef-1417239_960_720.png") no-repeat center center;
+  color: rgb(1, 1, 30);
+  font-weight: 800px;
+  font-size: x-large;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .recipesdetails > button {
-  background-color: orangered;
+  background-color: rgb(4, 4, 42);
+  border-radius: 13px;
+  width: 10%;
   color: beige;
   border: none;
   transform: scale(1.5);
