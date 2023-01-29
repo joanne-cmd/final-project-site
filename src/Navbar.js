@@ -44,7 +44,7 @@ function Navbar(){
     
     return (
         <>
-            <nav className="navbar navbar-expand-lg bg-body-tertiary  navbar bg-dark " data-bs-theme="dark">
+            <nav className="navbar navbar-expand-lg bg-body-tertiary   " data-bs-theme="dark">
                 <div className=" items container-fluid">
                     <a className=" logo navbar-brand" href="/">Tasty plans</a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
