@@ -3,6 +3,7 @@ import React,{useEffect, useState} from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import {Navbar, Signup} from './Navbar';
+import Footer from './Footer';
 import Recipes from './Recipes';
 import Recipedetials from './Recipedetails';
 
@@ -30,6 +31,7 @@ function App() {
         <Route path='/recipes' element={view==="recipes"? <Recipes setView={setView} setId={setId}/>:<Recipedetials id={id} setView={setView}/>} />
         <Route path='/signup' element={<Signup />} />
       </Routes>
+      <Footer/>
     </div>
     
   )
