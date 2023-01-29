@@ -1,4 +1,4 @@
-
+import React, { useEffect, useState } from "react";
 function Recipe({recipe, setId, setView}){
     
 
