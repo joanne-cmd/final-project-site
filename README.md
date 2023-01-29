@@ -8,6 +8,8 @@ Tasty plans is a website that makes work easier by  providing different types of
    
 
 ## SCREENSHOTS
+![Screenshot from 2023-01-29 09-34-06](https://user-images.githubusercontent.com/117694716/215333783-cb4db81f-e22e-4d90-86d1-40513671fb64.png)
+
 
 
 
